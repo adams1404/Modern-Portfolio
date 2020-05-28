@@ -1,16 +1,16 @@
-import { render } from "node-sass";
 
 // Select DOM Items
-const menBtn = document.querySelector('.menu-btn');
+const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
-const menNav = document.querySelector('.menu-nav');
-const menBtn = document.querySelector('.enu-branding');
+const menuNav = document.querySelector('.menu-nav');
+const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
 
 // Set Initial State of Menu
 let showMenu = false;
 
-menuBtn.addEventlistener('click', toggleMenu);
+menuBtn.addEventListener('click', toggleMenu);
+
 
 function toggleMenu() {
     if(!showMenu) {
@@ -31,5 +31,5 @@ function toggleMenu() {
 
         //Set Menu State
         showMenu = false;
-
-    
+    }
+}
