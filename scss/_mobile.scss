@@ -9,7 +9,7 @@
 }
 
 // Tablets & Small Laptops
-@include mediaXL{
+@include mediaMd {
     main {
         align-items: center;
         text-align: center;
@@ -20,7 +20,7 @@
         }
     }
 
-    ul.menu-na,
+    ul.menu-nav,
     div.menu-branding {
         float: none;
         width: 100%;
@@ -47,7 +47,20 @@
             height: 150px;
         }
     }
+
+    .about-info {
+        grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
+
 }
+
 
 // Smartphones
 @include mediaXL {
